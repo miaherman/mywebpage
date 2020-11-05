@@ -8,10 +8,6 @@ html {
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
 }
 
@@ -19,17 +15,31 @@ h1 {
     font-size: 3rem;
 }
 
-.section-1 {
+.about-me {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    width: 100%;
-    height: auto;
+    align-items: center;
     background-color: rgb(169, 175, 255);
+    overflow: hidden;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+
 }
 
-.about-me {
-    width: 22rem;
-    margin-right: 20rem;
-    
+.column {
+    width: 20rem;
+}
+
+img {
+    width: 25rem;
+}
+
+.portfolio {
+    display: flex;
+    background-image: url(/images/pattern.png);
+    justify-content: center;
+    background-size: cover;
+    height: 60%;
 }
 
