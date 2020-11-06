@@ -79,12 +79,21 @@ h1, p {
     
 }
 
-.contact-me {
+.pix {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40rem;
     background-color: lightcoral;
+}
+
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    background-color: #FCB97D;
 }
 
 h3 {
