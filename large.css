@@ -66,10 +66,11 @@ h1, p {
 
 .box-1 {
     position: absolute; 
-    display: flex inline-block; 
+    flex-wrap: nowrap;
     top: 9rem;
-    left: 16%;
+    left: 15%;
     margin: auto;
+   
 }
 
 .box-2 {
