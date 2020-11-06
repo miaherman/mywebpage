@@ -41,31 +41,42 @@ h1, p {
 .portfolio {
     position: relative;
     display: flex;
-    justify-content: left;
-    align-items: ;
+    justify-content: space-between;
     background-image: url(/images/pattern.png);
     background-size: 100%;
     background-repeat: repeat;
-    height: 100%;
-    width: 100%;
+    height: 30rem;
+    max-width: 100%;
 }
- 
+
 
 .lime-blob {
-    position: relative;
-    margin: 0;
-    left: 3rem;
+    margin: 4rem auto;
     top: 0;
-    width: 50rem;
-    max-width: 105%;
+    height: 110%;
+    width: 50%;
 }
 
-.text {
-    position: absolute;
+.orange-blob {
+    align-content: right;
+    height: 80%;
     width: auto;
-    padding-left: 11rem;
-    padding-top: 6rem;
+    max-width: 50%;
+}
 
+.box-1 {
+    position: absolute; 
+    display: flex inline-block; 
+    top: 9rem;
+    left: 16%;
+    margin: auto;
+}
+
+.box-2 {
+    top: 3rem;
+    right: 6rem;
+    position: absolute;
+    
 }
 
 .contact-me {
