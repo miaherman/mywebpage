@@ -1,3 +1,4 @@
+/* Body & HTML */
 html {
     margin: 0;
     width: 100%;
@@ -10,11 +11,21 @@ body {
     height: 100%;
 }
 
+/* Fonts */
 h1 {
     font-size: 3rem;
     margin: 0;
 }
 
+h1, p {
+    margin-left: 1rem;
+}
+
+h3 {
+    margin: 0;
+}
+
+/* Content */
 .about-me {
     display: flex;
     flex-direction: row;
@@ -24,9 +35,6 @@ h1 {
     padding-top: 10rem;
     padding-bottom: 2rem;
 
-}
-h1, p {
-    margin-left: 1rem;
 }
 
 .logo {
@@ -48,7 +56,6 @@ h1, p {
     height: 30rem;
     max-width: 100%;
 }
-
 
 .lime-blob {
     margin: 4rem auto;
@@ -88,15 +95,10 @@ h1, p {
     background-color: lightcoral;
 }
 
-
 .contact-me {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40rem;
     background-color: #FCB97D;
-}
-
-h3 {
-    margin: 0;
 }
