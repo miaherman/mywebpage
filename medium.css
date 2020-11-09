@@ -1,3 +1,21 @@
-@media (max-width: 66.75em) {
+@media (max-width: 60rem) {
+    
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        height: 100%;
+    }
+
+    .lime-blob {
+        margin: 0;
+        width: 30rem;
+    }
+
+    .orange-blob {
+        width: 30rem;
+        height: 100%;
+    }
     
 }
