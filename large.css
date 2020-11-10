@@ -10,13 +10,13 @@ body {
     margin: 0;
 }
 
-/* Fonts % Icons */
+/* Fonts % Icons & Lists */
 h1 {
     font-size: 3rem;
     margin: 0;
 }
 
-h1, p {
+h1 {
     margin-left: 1rem;
 }
 
@@ -29,6 +29,15 @@ h3, h2 {
     font-size: 2rem;
 }
 
+ul {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.about-me p {
+    padding-left: 1rem;
+}
+
 /* Content */
 .about-me {
     display: flex;
@@ -36,9 +45,8 @@ h3, h2 {
     justify-content: center;
     align-items: center;
     background-color: rgb(169, 175, 255);
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
-
 }
 
 .logo {
@@ -50,7 +58,7 @@ h3, h2 {
     align-items: center;
 }
 
-.portfolio {
+.resume {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -64,43 +72,50 @@ h3, h2 {
     margin: 2rem auto;
     top: 0;
     height: 110%;
-    width: 50%;
+    width: 55%;
 }
 
 .orange-blob {
     align-content: right;
     height: 80%;
-    width: auto;
+    max-width: 40%;
 }
 
 .box-1 {
     position: absolute; 
     flex-wrap: nowrap;
-    top: 7rem;
-    left: 13%;
+    top: 8rem;
+    left: 14%;
     margin: 0 auto;   
 }
+
 
 .box-2 {
     position: absolute; 
     flex-wrap: nowrap;
     top: 13rem;
-    left: 30%;
+    left: 32%;
     margin: auto;
 }
 
 .box-3 {
-    top: 3rem;
-    right: 4rem;
+    top: 4rem;
+    right: 2.5%;
     position: absolute;
     
 }
 
-.pix {
-    display: flex;
-    height: auto;
-    background-color: lightcoral;
+.carousel-container >* img{
+    width: 60%;
+    margin: auto;
 }
+
+.carousel-slide {
+    margin-top: 5rem;
+    display: flex;
+    width: 100%;
+}
+
 
 .contact-me {
     display: flex;
@@ -110,12 +125,4 @@ h3, h2 {
     padding: 2rem;
     background-color: #FCB97D;
 }
-
-/*footer {
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    text-align: center;
-    margin: 0rem auto;
-}*/
 

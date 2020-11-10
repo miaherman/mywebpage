@@ -1,14 +1,14 @@
-@media (max-width: 77.8em) {
+@media (max-width: 64em) {
 
     .lime-blob {
         display: none;
     }
 
     .orange-blob {
-        display: none;
+        display:  none;
     }
 
-    .portfolio {
+    .resume {
         display: flex;
         flex-direction: row;
         justify-content: center;

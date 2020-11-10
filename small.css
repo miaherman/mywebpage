@@ -1,0 +1,29 @@
+@media (max-width: 40em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .carousel-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .box-1 {
+        flex-direction: row;
+        width: 60%;
+
+    }
+
+    .box-2, .box-3 {
+        background-color:#FCB97D ;
+        width: 60%;
+    }
+    
+
+}
