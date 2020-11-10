@@ -20,7 +20,7 @@ h1, p {
     margin-left: 1rem;
 }
 
-h3 {
+h3, h2 {
     margin: 0;
 }
 
@@ -61,7 +61,7 @@ h3 {
 }
 
 .lime-blob {
-    margin: 4rem auto;
+    margin: 2rem auto;
     top: 0;
     height: 110%;
     width: 50%;
@@ -76,22 +76,29 @@ h3 {
 .box-1 {
     position: absolute; 
     flex-wrap: nowrap;
-    top: 9rem;
-    left: 15%;
-    margin: auto;
-   
+    top: 7rem;
+    left: 13%;
+    margin: 0 auto;   
 }
 
 .box-2 {
+    position: absolute; 
+    flex-wrap: nowrap;
+    top: 13rem;
+    left: 30%;
+    margin: auto;
+}
+
+.box-3 {
     top: 3rem;
-    right: 6rem;
+    right: 4rem;
     position: absolute;
     
 }
 
 .pix {
     display: flex;
-    height: 40rem;
+    height: auto;
     background-color: lightcoral;
 }
 
@@ -99,15 +106,16 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40rem;
+    height: auto;
+    padding: 2rem;
     background-color: #FCB97D;
 }
 
-footer {
+/*footer {
     display: flex;
     justify-content:space-around;
     align-items: center;
     text-align: center;
     margin: 0rem auto;
-}
+}*/
 
