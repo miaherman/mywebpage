@@ -66,68 +66,91 @@ ul {
     background-image: url(/images/pattern.png);
     background-size: 100%;
     background-repeat: repeat;
-    height: 30rem;
+    height: 100%;
 }
 
 .lime-blob {
-    margin: 2rem auto;
+    margin: 0;
+    padding-left: 1rem;
     top: 0;
     height: 110%;
     width: 55%;
 }
 
-.orange-blob {
-    align-content: right;
-    height: 80%;
-    max-width: 40%;
-}
-
-.box-1 {
+.contact-box {
     position: absolute; 
     flex-wrap: nowrap;
-    top: 8rem;
+    top: 12rem;
     left: 14%;
-    margin: 0 auto;   
+    margin: 0 auto; 
+    text-align: center;  
+    padding:1rem;
 }
-
 
 .box-2 {
-    position: absolute; 
-    flex-wrap: nowrap;
-    top: 13rem;
-    left: 32%;
-    margin: auto;
+    background-image: url(/images/orange-blob.png);
+    background-size: 140%;
+    background-repeat: no-repeat;
+    text-align: right;
+    width: 50rem;
 }
 
-.box-3 {
-    top: 4rem;
-    right: 2.5%;
-    position: absolute;
+.box-2 img {
+    margin-top: 10%;
+    max-width: 80%;
 }
 
-.pix {
+.pix-container {
     display: flex;
-    flex-direction: row;
-    padding: 8rem;
-    background-color: lightcoral;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;    
+    justify-content: space-between;
 }
 
-.pix img {
+.pix-container img {
     width: 100%;
 
 }
 
 .pix-1 {
     width: 50%;
+
 }
 
-.contact-me {
+.copyright {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
     padding: 2rem;
-    background-color: #FCB97D;
+    background-color:rgb(169, 175, 255);
 }
 
+/*Buttons*/
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: rgb(255, 255, 255);
+    color: #444;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s ease-out;
+  }
