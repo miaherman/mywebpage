@@ -21,6 +21,7 @@ h1 {
 }
 
 h3, h2 {
+    font-family: 'Poiret One', cursive;
     margin: 0;
 }
 
@@ -102,23 +103,27 @@ ul {
     top: 4rem;
     right: 2.5%;
     position: absolute;
-    
 }
 
-.carousel-container >* img{
-    width: 60%;
-    margin: auto;
-}
-
-.carousel-slide {
-    margin-top: 5rem;
+.pix {
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    padding: 8rem;
+    background-color: lightcoral;
 }
 
+.pix img {
+    width: 100%;
+
+}
+
+.pix-1 {
+    width: 50%;
+}
 
 .contact-me {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
