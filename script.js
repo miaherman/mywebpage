@@ -14,3 +14,13 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+/** 
+function blooming() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("lime-blob")) {
+    image.src = "/images/pattern.png"
+  } else {
+    image.src = "/images/lime-blob.png";
+  }    
+} */
