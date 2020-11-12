@@ -12,17 +12,17 @@ body {
 
 /* Fonts % Icons & Lists */
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0;
 }
 
-h1 {
-    margin-left: 1rem;
+h2, h3 {
+    font-size: 2rem;
+    margin: 0;
 }
 
-h3, h2 {
-    font-family: 'Poiret One', cursive;
-    margin: 0;
+h4 {
+    font-size: 1rem;
 }
 
 .fa-github, .fa-linkedin-in {
@@ -35,7 +35,7 @@ ul {
     padding-right: 1rem;
 }
 
-.about-me p {
+.about-me p, h1 {
     padding-left: 1rem;
 }
 
@@ -48,6 +48,7 @@ ul {
     background-color: rgb(169, 175, 255);
     padding-top: 5rem;
     padding-bottom: 2rem;
+    height: 100vh;
 }
 
 .logo {
@@ -59,7 +60,7 @@ ul {
     align-items: center;
 }
 
-.resume {
+.contact {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -74,20 +75,20 @@ ul {
     padding-left: 1rem;
     top: 0;
     height: 110%;
-    width: 55%;
+    width: 50%;
 }
 
 .contact-box {
     position: absolute; 
     flex-wrap: nowrap;
     top: 12rem;
-    left: 14%;
+    left: 5%;
     margin: 0 auto; 
     text-align: center;  
     padding:1rem;
 }
 
-.box-2 {
+.contact-img {
     background-image: url(/images/orange-blob.png);
     background-size: 140%;
     background-repeat: no-repeat;
@@ -95,26 +96,45 @@ ul {
     width: 50rem;
 }
 
-.box-2 img {
-    margin-top: 10%;
+.contact-img img {
+    margin-top: 20%;
+    max-width: 80%;
     max-width: 80%;
 }
 
 .pix-container {
     display: flex;
-    background-color: rgb(255, 255, 255);
-    padding: 2rem;    
-    justify-content: space-between;
+    padding: 1rem;   
 }
 
-.pix-container img {
-    width: 100%;
-
+.portfolio {
+    text-align: center;
+    background-color:rgb(169, 175, 255);
+    padding: 1rem;
 }
 
 .pix-1 {
-    width: 50%;
+    flex-wrap: wrap;
+}
 
+.pix-container img {
+    max-width: 100%;
+
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/pattern.png);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+.resume-content {
+    background-color:rgb(255, 255, 255);
+    padding: 1rem;
 }
 
 .copyright {
@@ -123,15 +143,14 @@ ul {
     justify-content: center;
     align-items: center;
     height: auto;
-    padding: 2rem;
+    padding: 1rem;
     background-color:rgb(169, 175, 255);
 }
 
 /*Buttons*/
-/* Style the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: rgb(255, 255, 255);
-    color: #444;
+    color: rgb(0, 0, 0);
     padding: 1rem;
     width: 100%;
     border: none;
@@ -139,18 +158,21 @@ ul {
     outline: none;
     font-size: 15px;
     text-align: center;
+    border-radius: 0rem 0rem 1rem 1rem;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .collapsible:hover {
-    background-color: #ccc;
+    background-color:#ffc188;
   }
   
   /* Style the collapsible content. Note: hidden by default */
   .content {
+    display: flex;
     padding: 0 18px;
-    background-color: white;
+    text-align: center;
     max-height: 0;
     overflow: hidden;
-    transition: 0.2s ease-out;
+    transition: 0.5s ease-out;
+
   }

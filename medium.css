@@ -1,5 +1,11 @@
 @media (max-width: 64em) {
-
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 1rem;
+    }
     .lime-blob {
         display: none;
     }
@@ -8,7 +14,11 @@
         display:  none;
     }
 
-    .resume {
+    .about-me {
+        height: auto;
+    }
+
+    .contact {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -24,19 +34,21 @@
         margin: 0;
     }
 
-    .box-2 {
+    .contact-img {
         top: 0;
         flex-wrap: nowrap;
-        width: auto;
-        height: auto;
         background-color: #fcb97d;
-        padding: 1rem;
+        padding: 0rem;
         left: 0;
         text-align: center;
-
+        width:auto;
     }
     
-    .box-2 img {
+    .pix-container {
+        height: auto;
+    }
+
+    .contact-img img {
         margin-top: auto;
         margin-left: auto;
         
