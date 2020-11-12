@@ -9,91 +9,118 @@
     <link rel="stylesheet" href="medium.css">
     <link rel="stylesheet" href="small.css">
     <script defer src="script.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="about-me">
-        <div>
-            <h1>Hi! I'm Mia Herman</h1>
-            <p>Web development. Graphic Design. Illustrator.<br> Jack of all trades.<br>
-            </p>
-        </div>
-        <div>
-            <img class="logo" id="miaLogo" src="images/logo.png" alt="logo">
-        </div>
-    </div>
-
-    <div class="contact">
-        <img class="lime-blob" src="images/lime-blob.png">
-        <div class="contact-box">
+    <main>
+        <!--AbOUT ME-->
+        <div class="about-me">
             <div>
-                <h1>CONTACT</h1>
-                <h2>hello@whoismiaherman.com</h2>
-            </div>
-            <div>
-                <a href="https://github.com/miaherman"><i class="fab fa-github"></i></a>
-                <a href="https://github.com/miaherman"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-    
-        <div class="contact-img">
-            <img src="/images/mia.png">
-        </div>
-    </div>
-    
-    <div class="portfolio">
-            <h1>PORTFOLIO</h1>
-
-        <div class="pix-container">
-            <div class="pix-1"><img src="/portfolio/image-1.png">
-                <button type="button" class="collapsible">About</button>
-                    <div class="content">
-                    <p>Lorem</p>
-                    </div>
-            </div>
-            
-            <div class="pix-1"><img src="/portfolio/image-2.png">
-                <button type="button" class="collapsible">About</button>
-                    <div class="content">
-                    <p>Lorem ipsum...</p>
-                    </div>
-            </div>
-
-            <div class="pix-1"><img src="/portfolio/image-3.png">
-                <button type="button" class="collapsible">About</button>
-                    <div class="content">
-                    <p>Lorem ipsum...</p>
-                    </div>
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="resume">
-        <button type="button" class="collapsible"><h1>RESUME</h1></button>
-        <div class="content">
-          <div class="resume-content">
-              <h2>SOFTWARE & <br>TECHNICAL SKILLS</h2>
-                  <p>Adobe Photoshop<br>
-                  Adobe Illustrator<br>
-                  Visual Studio Code<br>
-                  Adobe Premiere<br>
-                  Final Cut Pro<br>
-                  Project Management<br>
-             
-                  HTML<br>
-                  CSS<br>
-                  Javascript<br>
+                <h1>Hi! I'm Mia Herman</h1>
+                <p>Web development. Graphic Design. Illustrator.<br> Jack of all trades.<br>
                 </p>
-                  </div>
+            </div>
+            <!--MY LOGO-->
+            <div>
+                <img class="logo" id="miaLogo" src="images/logo.png" alt="logo">
+            </div>
         </div>
-    </div>
-    
-    <div class="copyright">
+
+        <!--CONTACT INFO-->
+        <div class="contact-container">
+            <img class="lime-blob" src="images/lime-blob.png">
+            <div class="contact-text">
+                <div>
+                    <h2>CONTACT</h2>
+                    <h3>hello@whoismiaherman.com</h3>
+                </div>
+                <div>
+                    <a href="https://github.com/miaherman"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/miaherman"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!--MY PICTURE-->
+            <div class="contact-img">
+                <img src="/images/mia.png">
+            </div>
+        </div>
+
+        <!--PORTFOLIO-->
+        <div class="portfolio">
+            <h2>PORTFOLIO</h2>
+
+            <div class="pix-container">
+                <div class="pix-1"><img src="/portfolio/image-1.png">
+                    <button type="button" class="foldout">About</button>
+                    <div class="content">
+                        <p>Lorem</p>
+                    </div>
+                </div>
+
+                <div class="pix-1"><img src="/portfolio/image-2.png">
+                    <button type="button" class="foldout">About</button>
+                    <div class="content">
+                        <h4>Hellohellohleoo</h4>
+                    </div>
+                </div>
+
+                <div class="pix-1"><img src="/portfolio/image-3.png">
+                    <button type="button" class="foldout">About</button>
+                    <div class="content">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--RESUME-->
+        <div class="resume">
+            <button type="button" class="foldout">
+                <h2>RESUME</h2>
+            </button>
+            <div class="content">
+                <div class="resume-content">
+                    <h3>EDUCATION</h3>
+                    <p><b>HVE, Front End Development</b><br>
+                        Medieinstitutet, Sweden<br>
+                        <br>
+                        <b>Bachelors degree</b><br>
+                        Cultural Studies with a major in Art History<br>
+                        Gothenburg University, Sweden<br>
+                        <br>
+                        <b>Diploma, Project Management</b><br>
+                        Martin College, Australia<br>
+                        <br></p>
+                    <h3>SOFTWARE & <br>TECHNICAL SKILLS</h3>
+                    <p>Adobe Photoshop<br>Adobe Illustrator<br>Visual Studio Code<br>Adobe Premiere<br>
+                        Final Cut Pro<br><br>HTML<br>CSS<br>Javascript<br><br>
+                    </p>
+                </div>
+                <div class="resume-content">
+                    <h3>LANGUAGES</h3>
+                    <p>Swedish<br>English<br>Farsi/Dari<br>Un petit peu francais<br></p>
+                    <h3>SOFT SKILLS</h3>
+                    <p>Excellent social skills<br>
+                        Focused and dependable<br>
+                        Team oriented<br>
+                        Bonus: Moderately funny!<br>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--FOOTER-->
+    <footer>
         <h4><b>All content copyright Mia Herman 2020 ©</b></h4>
-    </div>
+    </footer>
 
 </body>
 

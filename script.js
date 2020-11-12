@@ -1,15 +1,16 @@
-const coll = document.getElementsByClassName("collapsible");
+const coll = document.getElementsByClassName("foldout");
 let i;
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+  coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
     const content = this.nextElementSibling;
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } 
-      else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    }
+    else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
   });
 }

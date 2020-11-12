@@ -16,9 +16,14 @@ h1 {
     margin: 0;
 }
 
-h2, h3 {
-    font-size: 2rem;
+h2 {
+    font-size: 3rem;
     margin: 0;
+}
+
+h3 {
+    font-size: 1.9rem;
+    margin: 0.5rem;
 }
 
 h4 {
@@ -27,19 +32,14 @@ h4 {
 
 .fa-github, .fa-linkedin-in {
     color: black;
-    font-size: 2rem;
-}
-
-ul {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    font-size: 3rem;
 }
 
 .about-me p, h1 {
     padding-left: 1rem;
 }
 
-/* Content */
+/* Main Content */
 .about-me {
     display: flex;
     flex-direction: row;
@@ -60,16 +60,6 @@ ul {
     align-items: center;
 }
 
-.contact {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    background-image: url(/images/pattern.png);
-    background-size: 100%;
-    background-repeat: repeat;
-    height: 100%;
-}
-
 .lime-blob {
     margin: 0;
     padding-left: 1rem;
@@ -78,14 +68,21 @@ ul {
     width: 50%;
 }
 
-.contact-box {
+/* Contact info */
+.contact-container {
+    position: relative;
+    display: flex;
+    background-image: url(/images/pattern.png);
+    background-size: 100%;
+    background-repeat: repeat;
+    height: 100%;
+    justify-content: left;
+    align-items: center;
+}
+.contact-text {
     position: absolute; 
-    flex-wrap: nowrap;
-    top: 12rem;
-    left: 5%;
-    margin: 0 auto; 
     text-align: center;  
-    padding:1rem;
+    left: 8%;
 }
 
 .contact-img {
@@ -93,7 +90,8 @@ ul {
     background-size: 140%;
     background-repeat: no-repeat;
     text-align: right;
-    width: 50rem;
+    width: 55rem;
+    height: 50rem;
 }
 
 .contact-img img {
@@ -102,6 +100,7 @@ ul {
     max-width: 80%;
 }
 
+/* Portfolio */
 .pix-container {
     display: flex;
     padding: 1rem;   
@@ -122,6 +121,7 @@ ul {
 
 }
 
+/* Resume */
 .resume {
     display: flex;
     flex-direction: column;
@@ -134,10 +134,11 @@ ul {
 
 .resume-content {
     background-color:rgb(255, 255, 255);
-    padding: 1rem;
+    padding: 2%;
 }
 
-.copyright {
+/* Footer */
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,8 +148,8 @@ ul {
     background-color:rgb(169, 175, 255);
 }
 
-/*Buttons*/
-.collapsible {
+/* Buttons */
+.foldout {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     padding: 1rem;
@@ -161,12 +162,12 @@ ul {
     border-radius: 0rem 0rem 1rem 1rem;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
+  /* Background color and JSclass if button is clicked/hovered */
+  .active, .foldout:hover {
     background-color:#ffc188;
   }
   
-  /* Style the collapsible content. Note: hidden by default */
+  /* Content of button when clicked */
   .content {
     display: flex;
     padding: 0 18px;
@@ -174,5 +175,4 @@ ul {
     max-height: 0;
     overflow: hidden;
     transition: 0.5s ease-out;
-
   }
