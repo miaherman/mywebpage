@@ -73,7 +73,7 @@ h4 {
 .contact-container {
     position: relative;
     display: flex;
-    background-image: url(/images/pattern.png);
+    background-image: url(images/pattern.png);
     background-size: 100%;
     background-repeat: repeat;
     height: 100%;
@@ -87,7 +87,7 @@ h4 {
 }
 
 .contact-img {
-    background-image: url(/images/orange-blob.png);
+    background-image: url(images/orange-blob.png);
     background-size: 140%;
     background-repeat: no-repeat;
     text-align: right;
@@ -128,7 +128,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/images/pattern.png);
+    background-image: url(images/pattern.png);
     background-size: 100%;
     background-repeat: repeat;
 }
