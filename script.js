@@ -16,13 +16,3 @@ for (i = 0; i < fold.length; i++) {
     }
   });
 }
-
-/** 
-function imageframe() {
-  let image = document.getElementById('myImage');
-  if (image.src.match("lime-blob")) {
-    image.src = "/images/pattern.png"
-  } else {
-    image.src = "/images/lime-blob.png";
-  }    
-} */
