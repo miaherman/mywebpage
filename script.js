@@ -2,7 +2,7 @@
 const fold = document.getElementsByClassName("foldout");
 let i;
 
-/** For loop for buttons that fold out when clicked */
+/** Loop for buttons that fold out when clicked */
 for (i = 0; i < fold.length; i++) {
   fold [i].addEventListener("click", function () {
     this.classList.toggle("active");
