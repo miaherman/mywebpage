@@ -13,7 +13,8 @@
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        margin-top: 0;       
     }
 
     .fa-github, .fa-linkedin-in {
@@ -42,5 +43,19 @@
     .resume {
         flex-direction: column;
         justify-content: center;
+    }
+
+    /* Buttons */
+
+    .foldout {
+        margin-bottom: 0.5rem;
+    }
+
+    .content {
+        margin-bottom: 0.5rem;
+    }
+
+    .resume >* {
+        margin: 0;
     }
 }
