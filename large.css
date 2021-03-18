@@ -46,6 +46,16 @@ a {
 }
 
 /* Main Content */
+section {
+    scroll-snap-align: center;
+  }
+
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
 .about-me {
     display: flex;
     flex-direction: row;
@@ -114,6 +124,7 @@ a {
 
 .portfolio {
     text-align: center;
+    height: 100vh;
     background-color:rgb(169, 175, 255);
     padding: 1rem;
 }
@@ -131,7 +142,6 @@ a {
 .resume {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-image: url(images/pattern.png);
     background-size: 100%;
@@ -139,18 +149,23 @@ a {
 }
 
 .resume-content {
+    display: flex;
+    flex-direction: column;
     background-color:rgb(255, 255, 255);
-    padding: 2%;
+    padding: 1rem;
 }
 
+.resume-headline {
+    background-color: white;
+}
+.resume-title {
+    background-color: rgb(255, 255, 255);
+}
 /* Footer */
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    padding: 1rem;
+    text-align: center;
     background-color:rgb(169, 175, 255);
 }
 
@@ -172,15 +187,23 @@ footer {
   
   /* Background color and JSclass if button is clicked/hovered */
   .active, .foldout:hover {
-    background-color:#ffc188;
+    background-color:#ffffff;
   }
   
   /* Content of button when clicked */
   .content {
     display: flex;
-    padding: 0;
     text-align: center;
+    justify-content: center;
     max-height: 0;
     overflow: hidden;
-    transition: 0.7s ease-out;
+    transition: 0.7s ease-out; 
   }
+
+  .r-content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  

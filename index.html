@@ -11,12 +11,15 @@
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+
 </head>
 
 <body>
-    <main>
+    <main class="scroll-container">
         <!--ABOUT ME-->
-        <div class="about-me">
+        <section>
+        <div class="about-me" id="about-me">
             <div>
                 <h1>Hi! I'm Mia Herman</h1>
                 <p>Web development. Graphic Design. Illustrator.<br> Jack of all trades.<br>
@@ -27,9 +30,10 @@
                 <img class="logo" id="myImage" src="images/logo.png" alt="logo" onclick="blooming()">
             </div>
         </div>
-
+        </section>
+        <section>
         <!--CONTACT INFO-->
-        <div class="contact-container">
+        <div class="contact-container" id="contact-container">
             <img class="lime-blob" src="images/lime-blob.png">
             <div class="contact-text">
                 <div>
@@ -38,17 +42,19 @@
                 </div>
                 <div>
                     <a href="https://github.com/miaherman"><i class="fab fa-github"></i></a>
-                    <a href="https://github.com/miaherman"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/mia-herman-9a0b26189
+                    "><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-
+        
             <!--MY PICTURE-->
             <div class="contact-img">
                 <img src="images/mia.png">
             </div>
         </div>
-
+         </section>
         <!--PORTFOLIO-->
+        <section>
         <div class="portfolio">
             <h2>PORTFOLIO</h2>
 
@@ -70,19 +76,18 @@
                 <div class="pix-1"><img src="portfolio/image-transp-3.png">
                     <button type="button" class="foldout">Web development</button>
                     <div class="content">
-                        <p>While I've been illustrating for years, I've recently dwelved into the world of programming.</p>
+                        <p>While I've been illustrating for years, I've recently dwelved into the world of programming as of the fall of 2020. This website is under construction!</p>
                     </div>
                 </div>
             </div>
 
         </div>
-
+    </section>
         <!--RESUME-->
+        <section>
         <div class="resume">
-            <button type="button" class="foldout">
-                <h2>RESUME</h2>
-            </button>
-            <div class="content">
+                <h2 class="resume-headline">RESUME</h2>
+            <div class="r-content">
                 <div class="resume-content">
                     <h3>EDUCATION</h3>
                     <p><b>HVE, Front End Development</b><br>
@@ -113,14 +118,15 @@
                 </div>
             </div>
         </div>
-
-    </main>
+    
 
     <!--FOOTER-->
-    <footer>
-        <h4><b>All content copyright Mia Herman 2020 ©</b></h4>
-    </footer>
+        <footer>
+            <h4><b>All content copyright Mia Herman 2020 ©</b></h4>
+        </footer>
+    </section>
 
+</main>
 </body>
 
 </html>

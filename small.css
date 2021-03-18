@@ -58,4 +58,8 @@
     .resume >* {
         margin: 0;
     }
+
+    .resume-content {
+        padding:0;
+    }
 }

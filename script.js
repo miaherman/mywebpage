@@ -1,3 +1,4 @@
+
 /** Gets buttonID from HTML */
 const fold = document.getElementsByClassName("foldout");
 let i;
